@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #575757;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
