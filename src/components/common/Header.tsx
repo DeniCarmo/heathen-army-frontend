@@ -3,8 +3,10 @@ import { Logo } from "../header/Logo"
 import { Navigation } from "../header/Navigation"
 import { SearchSuggestion } from "../search/SearchSuggestion"
 import { Search } from "./Search"
+import { useAppSelector } from "../../hooks/hooks"
 
 export const Header = () => {
+  const user = useAppSelector(state => state.user);
   return(
     <HeaderEl>
       <HeaderWrapper>
@@ -12,6 +14,7 @@ export const Header = () => {
         <Search />
         <Navigation />
         <SearchSuggestion />
+        <UserName>{user.username}</UserName>
       </HeaderWrapper>
     </HeaderEl>
   )
@@ -33,4 +36,11 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
+`;
+
+const UserName = styled.span`
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fefefe;
 `;

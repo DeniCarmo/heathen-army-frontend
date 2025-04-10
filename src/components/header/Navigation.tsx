@@ -32,7 +32,7 @@ const MenuItem = styled.li`
 `;
 
 const MenuLink = styled.a`
-  font-family: 'Robot', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   line-height: 15px;
   font-weight: 500;

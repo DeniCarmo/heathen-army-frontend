@@ -76,6 +76,8 @@ export const MainBanner : React.FC<MainBannerProps> = ({bannerData, placeholder}
 
 const BannerWrapper = styled.section`
   width: 100%;
-  max-width: 1920px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
