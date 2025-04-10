@@ -32,6 +32,7 @@ const Wrapper = styled.section`
 `;
 
 const SearchInput = styled.input`
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -49,9 +50,10 @@ const SearchInput = styled.input`
   padding-left: 15px;
 
   &::placeholder {
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 14px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #636363;
   }
 `;
